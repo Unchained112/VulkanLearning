@@ -126,7 +126,7 @@ void LvePipeline::createShaderModule(const std::vector<char> &code, VkShaderModu
     createInfo.pCode = reinterpret_cast<const uint32_t*>(code.data());
 
     if(vkCreateShaderModule(lveDevice.device(), &createInfo, nullptr, shaderModule) != VK_SUCCESS){
-        throw std::runtime_error("fail to create shader module");
+      throw std::runtime_error("fail to create shader module");
     }
 }
 
