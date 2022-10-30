@@ -56,7 +56,7 @@ class LveSwapChain {
   VkFormat swapChainImageFormat;
   VkExtent2D swapChainExtent;
 
-  std::vector<VkFramebuffer> swapChainFramebuffers;
+  std::vector<VkFramebuffer> swapChainFramebuffers; // create frame buffer objects
   VkRenderPass renderPass;
 
   std::vector<VkImage> depthImages;

@@ -42,6 +42,60 @@ The pipeline is configured with the class `PipelineConfigInfo`. Within the class
 
 ### Swap Chain
 
+Swap chain is a series of frame buffers that are used to be displayed on window. 
+
+![Swap Chain 1](./images/SwapChain1.png)
+![Swap Chain 2](./images/SwapChain2.png)
+
+Vertical Synchronization (VSync), helps create stability by synchronizing the image frame rate of your game or application with your display monitor refresh rate. If it's not synchronized, it can cause screen tearing, an effect that causes the image to look glitched or duplicated horizontally across the screen.
+
+Double Buffering
+![Double Buffering](./images/DoubleBuffering.png)
+
+Triple Buffering: 
+![Triple Buffering](./images/TripleBuffering.png)
+Triple buffering is automatically for some graphic APIs (not for Vulkan). 
+
+Coming to implementation:
+1. We will have multiple frame buffers (2 or 3).
+2. We can use `swapChain.acquireNextImage()` to get the next index of our frame buffers.
+
+Vulkan present model in function `VkPresentModeKHR LveSwapChain::chooseSwapPresentMode`:
+![Present Mode](./images/PresentMode.png)
+
+In `LveSwapChain::createRenderPass()`, for now, a renderpass describes the structure and format of the frame buffer objects and their attachments.
+
+### Command Buffer
+
+![Command Buffer](./images/CommandBuffer.png)
+
+Command Buffer Life Cycle
+![Command Buffer Life](./images/CBLifeCycle.png)
+
+*At most 2 frames can be submitted for rendering at once.*
+
+In Vulkan API, the primary command buffer can be directly submitted, but the secondary command buffer can only be called by other command buffer (cannot be directly submitted).
+
+### Vertex Buffer
+
+![Vertex Buffer](./images/VertexBuffer.png)
+
+![Vertex Buffer Description](./images/VertexBindingDes.png)
+
+Vertex Attribute Description
+
+- binding: binding = 0
+- location: location = 1
+- offset: offset = 8 bytes
+- format: format = VK_FORMAT_R32G32B32_SLFOAT
+
+For example: `layout(location = 1) in vec3 color;`
+
+### Fragment Interpolation
+
+![Fragment Interpolation](./images/FragmentInterp.png)
+
+SIMD Model (Single instruction - multiple data) is one of the main reasons why GPU process large amount of data faster than CPU, by trading the flexibility.
 
 
 

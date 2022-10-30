@@ -24,7 +24,7 @@ void LveModel::createVertexBuffers(const std::vector<Vertex> &vertices){
         vertexBuffer,
         vertexBufferMemory);
     
-    void *data;
+    void *data; // from CPU address, point to the GPU (device) memory address
     vkMapMemory(lveDevice.device(), vertexBufferMemory, 0, bufferSize, 0, &data);
     memcpy(data, vertices.data(), static_cast<size_t>(bufferSize));
     vkUnmapMemory(lveDevice.device(), vertexBufferMemory);
@@ -50,11 +50,16 @@ std::vector<VkVertexInputBindingDescription> LveModel::Vertex::getBindingDescrip
 }
 
 std::vector<VkVertexInputAttributeDescription> LveModel::Vertex::getAttributeDescriptions(){
-    std::vector<VkVertexInputAttributeDescription> attributeDescriptions(1);
+    std::vector<VkVertexInputAttributeDescription> attributeDescriptions(2);
     attributeDescriptions[0].binding = 0;
     attributeDescriptions[0].location = 0;
     attributeDescriptions[0].format = VK_FORMAT_R32G32_SFLOAT;
-    attributeDescriptions[0].offset = 0;
+    attributeDescriptions[0].offset = offsetof(Vertex, position);
+    //  color
+    attributeDescriptions[1].binding = 0; //since color are interleaving with position, binding is still 0
+    attributeDescriptions[1].location = 1;
+    attributeDescriptions[1].format = VK_FORMAT_R32G32B32_SFLOAT;
+    attributeDescriptions[1].offset = offsetof(Vertex, color);
     return attributeDescriptions;
 }
 

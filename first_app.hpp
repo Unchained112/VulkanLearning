@@ -40,7 +40,7 @@ class FirstApp{
     LveWindow lveWindow{WIDTH, HEIGHT, "Hello Vulkan!"};
     LveDevice lveDevice{lveWindow};
     LveSwapChain lveSwapChain{lveDevice, lveWindow.getExtent()};
-    std::unique_ptr<LvePipeline> lvePipeline;
+    std::unique_ptr<LvePipeline> lvePipeline; // used smart pointer for easy memory management
     VkPipelineLayout pipelineLayout;
     std::vector<VkCommandBuffer> commandBuffers;
     std::unique_ptr<LveModel> lveModel;
