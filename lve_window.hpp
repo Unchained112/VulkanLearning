@@ -1,5 +1,5 @@
 
-#pragma once 
+#pragma once
 // #pragma once是一个非标准但是被广泛支持的前置处理符号，会让所在的文件在一个单独的编译中只被包含一次。
 // 以此方式，#pragma once提供类似include防范的目的，但是拥有较少的代码且能避免名称的碰撞。
 
@@ -21,14 +21,18 @@ namespace lve
 
         bool shouldClose() { return glfwWindowShouldClose(window); }
         VkExtent2D getExtent() { return {static_cast<uint32_t>(width), static_cast<uint32_t>(height)}; }
+        bool wasWindowResized() { return framebufferResize; }
+        void resetWindowResizeFlag() { framebufferResize = false; }
 
         void createWindowSurface(VkInstance instance, VkSurfaceKHR *surface);
 
     private:
+        static void framebufferResizeCallBack(GLFWwindow *window, int width, int height);
         void initWindow();
 
-        const int width;
-        const int height;
+        int width;
+        int height;
+        bool framebufferResize = false;
 
         std::string windowName;
         GLFWwindow *window;

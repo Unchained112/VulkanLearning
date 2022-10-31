@@ -97,8 +97,13 @@ For example: `layout(location = 1) in vec3 color;`
 
 SIMD Model (Single instruction - multiple data) is one of the main reasons why GPU process large amount of data faster than CPU, by trading the flexibility.
 
+### Swap Chian Recreation & Dynamic Viewport
 
+In order to resize the window, we need to recreate the swap chain every time the window size is changed. 
+*Notice that before this procedural, you cannot resize the window as well as move the window to another monitor screen (if you have one), which would lead to crash.*
 
-
+1. Now it is able to listen to size changes on the glfw window.
+2. Every frame before drawing, check if window has been resized and swapchain is still valid.
+3. Use a dynamic viewport so that graphics pipeline is no longer dependent on swapchain dimension.
 
 
