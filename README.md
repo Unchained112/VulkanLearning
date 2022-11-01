@@ -106,4 +106,28 @@ In order to resize the window, we need to recreate the swap chain every time the
 2. Every frame before drawing, check if window has been resized and swapchain is still valid.
 3. Use a dynamic viewport so that graphics pipeline is no longer dependent on swapchain dimension.
 
+### Push Constants
+
+Use push constants command to update data before a draw call.
+
+![Push Constants](./images/PushConstants.png)
+
+- Pro: 
+  - Quick to implement
+  - High performance for frequently updating data
+- Con: 
+  - Only 128bytes of memory guaranteed to be available for push constants
+  - Tied to draw calls, making aggregation of draw calls difficult/impossible
+
+Push Constant Range:
+- Stage Flags: e.g. `VK_SHADER_STAGE_VERTEX_BIT`
+- Offset (must be multiple of 4)
+- Size (must be multiple of 4)
+
+Note: max `PushConstantsSize` memory capacity is shared between all shader stages.
+
+Alignment Error
+
+![Alignment Error](./images/AlignmentError.png)
+
 
