@@ -1,17 +1,17 @@
-## Vulkan API Study Note
+# Vulkan API Study Note
 
 To better understand how do low-level programming with graphic APIs, I decided to follow the tutorial [Vulkan Game Engine Tutorials](https://www.youtube.com/watch?v=Y9U9IE0gVHA&list=PL8327DO66nu9qYVKLDmdLW_84-yE4auCR) to build a renderer step by step. 
 
 I hope to document the techniques or skills which I feel important through the learning experience. 
 
-### Pipeline Overview
+## Pipeline Overview
 
 The simplified Vulkan pipeline:
 ![Vulkan Pipeline](./images/VulkanPipeline.png)
 
 The namespace in the code lve means little Vulkan engine. 
 
-### Device Setup
+## Device Setup
 
 In `lve_pipeline.hpp`, we define the pipeline and its functions. 
 
@@ -29,7 +29,7 @@ LveDevice::LveDevice(LveWindow &window) : window{window} { // Initialize hardwar
 }
 ```
 
-### Fixed Function Pipeline Stages
+## Fixed Function Pipeline Stages
 
 The pipeline is configured with the class `PipelineConfigInfo`. Within the class, we set:
 - input assembly configuration 
@@ -40,7 +40,7 @@ The pipeline is configured with the class `PipelineConfigInfo`. Within the class
 - color blend
 - depth buffer
 
-### Swap Chain
+## Swap Chain
 
 Swap chain is a series of frame buffers that are used to be displayed on window. 
 
@@ -65,7 +65,7 @@ Vulkan present model in function `VkPresentModeKHR LveSwapChain::chooseSwapPrese
 
 In `LveSwapChain::createRenderPass()`, for now, a renderpass describes the structure and format of the frame buffer objects and their attachments.
 
-### Command Buffer
+## Command Buffer
 
 ![Command Buffer](./images/CommandBuffer.png)
 
@@ -76,7 +76,7 @@ Command Buffer Life Cycle
 
 In Vulkan API, the primary command buffer can be directly submitted, but the secondary command buffer can only be called by other command buffer (cannot be directly submitted).
 
-### Vertex Buffer
+## Vertex Buffer
 
 ![Vertex Buffer](./images/VertexBuffer.png)
 
@@ -91,13 +91,13 @@ Vertex Attribute Description
 
 For example: `layout(location = 1) in vec3 color;`
 
-### Fragment Interpolation
+## Fragment Interpolation
 
 ![Fragment Interpolation](./images/FragmentInterp.png)
 
 SIMD Model (Single instruction - multiple data) is one of the main reasons why GPU process large amount of data faster than CPU, by trading the flexibility.
 
-### Swap Chian Recreation & Dynamic Viewport
+## Swap Chian Recreation & Dynamic Viewport
 
 In order to resize the window, we need to recreate the swap chain every time the window size is changed. 
 *Notice that before this procedural, you cannot resize the window as well as move the window to another monitor screen (if you have one), which would lead to crash.*
@@ -106,7 +106,7 @@ In order to resize the window, we need to recreate the swap chain every time the
 2. Every frame before drawing, check if window has been resized and swapchain is still valid.
 3. Use a dynamic viewport so that graphics pipeline is no longer dependent on swapchain dimension.
 
-### Push Constants
+## Push Constants
 
 Use push constants command to update data before a draw call.
 
@@ -130,4 +130,18 @@ Alignment Error
 
 ![Alignment Error](./images/AlignmentError.png)
 
+## 2D Transformations and Game Object
 
+Use GLM library: e.g. `glm::mat2`
+
+Game object runtime models
+- ECS (Data oriented)
+- Object Oriented (Inheritance, etc.)
+
+Using column major order, here we set the transformation so that the object is first scaled and then rotated.
+Namely, `rotMatrix * scaleMat` in the code.
+
+Summary
+1. Columns of transformation matrix say where *i* and *j* basis vector will lend.
+2. Transformation can be combined using multiplication `A x B = T`
+3. Matrix multiplication is associative but not commutative: `A(BC) = (AB)C; AB != BA`

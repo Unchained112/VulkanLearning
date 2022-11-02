@@ -7,7 +7,7 @@
 #include "lve_pipeline.hpp"
 #include "lve_swap_chain.hpp"
 #include "lve_device.hpp"
-#include "lve_model.hpp"
+#include "lve_game_object.hpp"
 
 namespace lve{
 
@@ -31,7 +31,7 @@ class FirstApp{
         glm::vec2 top);
 
     private:
-    void loadModels();
+    void loadGameObjects();
     void createPipelineLayout();
     void createPipeline();
     void createCommandBuffers();
@@ -39,6 +39,7 @@ class FirstApp{
     void drawFrame();
     void recreateSwapChain();
     void recordCommandBuffer(int imageIndex);
+    void renderGameObjects(VkCommandBuffer commandBuffer);
 
     LveWindow lveWindow{WIDTH, HEIGHT, "Hello Vulkan!"};
     LveDevice lveDevice{lveWindow};
@@ -46,7 +47,7 @@ class FirstApp{
     std::unique_ptr<LvePipeline> lvePipeline; // used smart pointer for easy memory management
     VkPipelineLayout pipelineLayout;
     std::vector<VkCommandBuffer> commandBuffers;
-    std::unique_ptr<LveModel> lveModel;
+    std::vector<LveGameObject> gameObjects;
 };
 
 
