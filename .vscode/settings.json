@@ -3,5 +3,8 @@
     "cSpell.words": [
         "rasterization",
         "Vulkan"
-    ]
+    ],
+    "files.associations": {
+        "vector": "cpp"
+    }
 }

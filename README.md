@@ -135,7 +135,7 @@ Alignment Error
 Use GLM library: e.g. `glm::mat2`
 
 Game object runtime models
-- ECS (Data oriented)
+- ECS Entity Component System (Data oriented)
 - Object Oriented (Inheritance, etc.)
 
 Using column major order, here we set the transformation so that the object is first scaled and then rotated.
@@ -145,3 +145,17 @@ Summary
 1. Columns of transformation matrix say where *i* and *j* basis vector will lend.
 2. Transformation can be combined using multiplication `A x B = T`
 3. Matrix multiplication is associative but not commutative: `A(BC) = (AB)C; AB != BA`
+
+## Renderer & Systems
+
+![Renderer and Systems](./images/RenderernSystems.png)
+
+![Application of these](./images/AppThese.png)
+
+Here, "System" refers to anything that act on a subset of the game objects, which is not equal to ECS.
+
+The application is responsible for not sending a game object to the wrong system.
+
+
+
+ 
