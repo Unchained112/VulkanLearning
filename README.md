@@ -148,6 +148,9 @@ Summary
 
 ## Renderer & Systems
 
+- The renderer is responsible for managing the swap chain, command buffers, and drawing functionality 
+- The SimpleRenderSystem manages a pipeline and its layout, and provides the data necessary to render a list of game objects
+
 ![Renderer and Systems](./images/RenderernSystems.png)
 
 ![Application of these](./images/AppThese.png)
