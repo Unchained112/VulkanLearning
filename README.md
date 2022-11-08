@@ -156,6 +156,32 @@ Here, "System" refers to anything that act on a subset of the game objects, whic
 
 The application is responsible for not sending a game object to the wrong system.
 
-
-
+## Euler Angles & Homogeneous Coordinates
  
+2D Affine Transformation
+
+```
+| a b tx |  |x|   |ax + by + tx|
+| c d ty |  |y| = |cx + dy + ty|  
+| 0 0 1  |  |1|   |     1      |
+```
+
+- Relative offsets / distance are affected by Linear Transformation
+- Relative offsets / distance are NOT affected by Transformation
+
+```
+// vector v represent a point
+v = (3, 2, 1)
+
+// vector u represent a distance / offset
+u = (3, 2, 0)
+```
+
+Intrinsic vs Extrinsic Rotations
+![Intrinsic vs Extrinsic Rotations](./images/IERotations.png)
+
+Summary 
+- Homogeneous coordinates, last component indicates position versus direction, 1 for position and 0 for direction.
+- Most common ways to represent rotations are Euler angles, Quaternions and axis angle. (Here is Y(1), X(2), Z(3))
+- Read right to left for extrinsic rotation interpretation
+- Read left to right for intrinsic rotation interpretation

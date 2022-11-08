@@ -11,7 +11,7 @@ class LveModel{ //transfer vertex data from cpu to gpu
     public:
 
     struct Vertex{
-        glm::vec2 position;
+        glm::vec3 position;
         glm::vec3 color; // Interleave vertex buffer, position + color
 
         static std::vector<VkVertexInputBindingDescription> getBindingDescriptions();
