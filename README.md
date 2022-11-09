@@ -185,3 +185,43 @@ Summary
 - Most common ways to represent rotations are Euler angles, Quaternions and axis angle. (Here is Y(1), X(2), Z(3))
 - Read right to left for extrinsic rotation interpretation
 - Read left to right for intrinsic rotation interpretation
+
+## The Math behind 3D games
+
+Image Order Rendering vs. Object Order Rendering
+
+![Image Order Rendering vs. Object Order Rendering](./images/IORendering.png)
+
+Vulkan's Canonical Viewing Volume
+
+![Vulkan's Canonical Viewing Volume](./images/VulkanViewVolume.png)
+
+The Orthographic Projection Matrix
+
+![Orthographic Project Matrix](./images/OrthographicProjectMatrix.png)
+
+The Perspective Projection
+
+```
+Homogeneous vector <==> Position vector
+     |x|                   |x/w|   
+     |y|                   |y/w|   
+     |z|           <==>    |z/w|
+     |w|                   
+
+Projective Matrix
+|n 0   0    0 | |x|   |nx |
+|0 n   0    0 | |y| = |ny |
+|0 0   m1  m2 | |z|   |z^2|
+|0 0   1    0 | |1|   |z  |
+
+```
+
+![Projective Matrix](./images/ProjectiveMatrix.png)
+
+![Projective Transformation](./images/ProjectiveTransformation.png)
+
+![Perspective Projection Matrix](./images/PerspectiveProjectionMatrix.png)
+
+![Final Projection Matrix](./images/FinalProjectionMatrix.png)
+
