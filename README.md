@@ -225,3 +225,19 @@ Projective Matrix
 
 ![Final Projection Matrix](./images/FinalProjectionMatrix.png)
 
+## Camera (View) Transformation
+
+1. Object Space ==(Model Transformation)==> World Space (Frustum)
+2. World Space ==(Projection Transformation)==> Canonical View Volume
+3. Canonical View Volume ==(Viewprot Transformation)==> Viewport
+
+Instead:
+1. Translate "camera" to origin
+2. Rotate "camera" to point in +z direction
+3. End up in the Camera Space before entering the Viewport
+
+`M_cam = Rotate x Translate`
+
+In summary:
+
+![Camera View Summary](./images/CameraViewSummary.png)
