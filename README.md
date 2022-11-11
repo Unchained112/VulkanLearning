@@ -241,3 +241,9 @@ Instead:
 In summary:
 
 ![Camera View Summary](./images/CameraViewSummary.png)
+
+## Game loops & User input 
+
+Some system update game objects every time step.
+
+
