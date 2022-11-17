@@ -246,4 +246,56 @@ In summary:
 
 Some system update game objects every time step.
 
+Here, the camera movement is implemented.
+
+## Index and Staging Buffers
+
+In a 3D model, since one vertex is often shared by multiple triangles, there is no reason to store duplicated vertices. To store the triangles more efficiently, the index buffer only store index of points makes up triangles.
+
+![Index Buffer](./images/IndexBuffer.png)
+
+The memory mapping from CPU to GPU
+
+![Buffer Memory Mapping](./images/BufferMp.png)
+
+After this, we un-map the memory from the CPU: 
+
+```cpp
+void LveModel::createIndexBuffers(const std::vector<uint32_t> &indices){
+    indexCount = static_cast<uint32_t>(indices.size());
+    hasIndexBuffer = indexCount > 0;
+    if(!hasIndexBuffer){
+        return;
+    }
+
+    VkDeviceSize bufferSize = sizeof(indices[0]) * indexCount;
+    lveDevice.createBuffer(
+        bufferSize,
+        VK_BUFFER_USAGE_INDEX_BUFFER_BIT,
+        VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT | VK_MEMORY_PROPERTY_HOST_COHERENT_BIT,
+        indexBuffer,
+        indexBufferMemory);
+    
+    void *data; // from CPU address, point to the GPU (device) memory address
+    vkMapMemory(lveDevice.device(), indexBufferMemory, 0, bufferSize, 0, &data);
+    memcpy(data, indices.data(), static_cast<size_t>(bufferSize));
+    vkUnmapMemory(lveDevice.device(), indexBufferMemory); // Unmapping
+}
+```
+
+However, this setting is not optimal for memory since the fastest memory in GPU device local memory cannot be mapped directly from CPU host. Therefore, we use a temporary buffer called Staging Buffer to copy the data from host and pass to the device's fast memory.
+
+![Staging Buffer](./images/StagingBuffer.png)
+
+## Loading 3D Models
+
+Library used: [tinyobjloader](https://github.com/tinyobjloader/tinyobjloader)
+
+One problem when trying to use the index buffer to store the vertices is that there is only one index buffer, but there are more vertices data include the position, the texture and the normal. 
+
+To avoid duplication, the following is done:
+
+![LoadObj Index Buffer](./images/LoadObjIndexBuffer.png)
+
+![LoadObj Hashed Index](./images/LoadObjHashedIndex.png)
 
