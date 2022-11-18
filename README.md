@@ -299,3 +299,27 @@ To avoid duplication, the following is done:
 
 ![LoadObj Hashed Index](./images/LoadObjHashedIndex.png)
 
+## Diffuse Shading
+
+![Diffuse Shading](./images/DiffuseShading.png)
+
+![Diffuse ](./images/Diffuse.png)
+
+This model assumes the surface scatters the light equally in all directions.
+
+In this model, suppose the normalized direction of light source and surface normal vectors are `l, n`.
+The light intensity is given by `dot(l, n)`
+
+The intuition behind is that the same amount of light is spread out over a larger area.
+
+![Light Sources](./images/LightSource.png)
+
+Vertex normal could be calculated in different way in the model (.obj) files:
+
+![Smooth Flat](./images/SmoothFlat.png)
+
+However, the transformation matrix for normal vectors need to be modified:
+
+![Normal Transformation](./images/NormalTransformation.png)
+
+Note that the glm library will automatically convert the mat3 to mat4 in the shader.
