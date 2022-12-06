@@ -4,6 +4,7 @@
 #define GLM_FORCE_DEPTH_ZERO_TO_ONE
 
 #include "lve_device.hpp"
+#include "lve_buffer.hpp"
 
 #include <vector>
 #include <memory>
@@ -50,13 +51,11 @@ class LveModel{ //transfer vertex data from cpu to gpu
     void createIndexBuffers(const std::vector<uint32_t> &indices);
 
     LveDevice &lveDevice;
-    VkBuffer vertexBuffer;
-    VkDeviceMemory vertexBufferMemory; // buffer need manually allocate the memory
+    std::unique_ptr<LveBuffer> vertexBuffer;
     uint32_t vertexCount;
 
     bool hasIndexBuffer = false;
-    VkBuffer indexBuffer;
-    VkDeviceMemory indexBufferMemory;
+    std::unique_ptr<LveBuffer> indexBuffer;
     uint32_t indexCount;
 };
 

@@ -323,3 +323,16 @@ However, the transformation matrix for normal vectors need to be modified:
 ![Normal Transformation](./images/NormalTransformation.png)
 
 Note that the glm library will automatically convert the mat3 to mat4 in the shader.
+
+## Uniform Buffers
+
+Disadvantages compared to Push Constants
+- reading from uniform buffer memory can be slower
+- require additional setup (buffer, descriptor sets)
+- binding descriptor sets has some overhead
+
+![UBO Padding](./images/UBOPadding.png)
+
+Double buffering:
+
+![Double UBO](./images/DoubleUBO.png)
