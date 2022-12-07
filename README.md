@@ -4,6 +4,16 @@ To better understand how do low-level programming with graphic APIs, I decided t
 
 I hope to document the techniques or skills which I feel important through the learning experience. 
 
+## Results
+
+I forget to record the generated results until Descriptor Set section T_T. 
+
+Now the result for Descriptor Set (2022/12/06):
+
+![Result 20221207_0](./images/Result20221207_0.png)
+![Result 20221207_1](./images/Result20221207_1.png)
+
+
 ## Pipeline Overview
 
 The simplified Vulkan pipeline:
@@ -336,3 +346,35 @@ Disadvantages compared to Push Constants
 Double buffering:
 
 ![Double UBO](./images/DoubleUBO.png)
+
+## Descriptor Sets
+
+Uniform Buffer cannot be directly bind to a pipeline.
+
+Descriptor:
+
+![Descriptor](./images/Descriptor.png)
+
+When having complicated Uniform buffers and textures, it would be less efficient to bind each separately.
+With descriptor set, we can do this:
+
+![Descriptor Sets](./images/DescriptorSets.png)
+
+Descriptor Layouts = create Pipeline Layout
+
+![Descriptor Layouts](./images/DescriptorLayouts.png)
+
+Descriptor Pool 
+- create large pool object
+- allocate sets at runtime as needed
+
+In summary:
+1. Descriptor point to a resource
+2. Group descriptors into sets to bind
+3. `DescriptorSetLayouts` need to be provided at pipeline creation
+4. Bind descriptor sets before draw call
+5. Descriptor sets can only be created using a descriptor pool object
+
+`lve_descriptor` procedure:
+
+![DescriptorP](./images/DescriptorP.png)
