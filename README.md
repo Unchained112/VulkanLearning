@@ -8,10 +8,14 @@ I hope to document the techniques or skills which I feel important through the l
 
 I forget to record the generated results until Descriptor Set section T_T. 
 
-Now the result for Descriptor Set (2022/12/06):
+The result for Descriptor Set (2022/12/06):
 
 ![Result 20221207_0](./images/Result20221207_0.png)
 ![Result 20221207_1](./images/Result20221207_1.png)
+
+The result for Point Light (2022/12/08):
+
+![Result 20221208](./images/Result20221208.png)
 
 
 ## Pipeline Overview
@@ -378,3 +382,13 @@ In summary:
 `lve_descriptor` procedure:
 
 ![DescriptorP](./images/DescriptorP.png)
+
+## Intro to Point Lights
+
+Point Light
+
+![Point Light](./images/PointLight.png)
+
+Point Light Intensity
+
+![Point Light Intensity](./images/PointLightIntensity.png)
