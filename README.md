@@ -17,6 +17,9 @@ The result for Point Light (2022/12/08):
 
 ![Result 20221208](./images/Result20221208.png)
 
+The result for Fragment Lighting (2022/12/28)
+
+![Result 20221228](./images/Result20221228.png)
 
 ## Pipeline Overview
 
@@ -392,3 +395,9 @@ Point Light
 Point Light Intensity
 
 ![Point Light Intensity](./images/PointLightIntensity.png)
+
+## Vertex vs. Fragment Lighting
+
+Per-Fragment Lighting
+1. Interpolate normals
+2. Do lighting calculation on fragment shader
