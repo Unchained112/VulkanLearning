@@ -21,6 +21,10 @@ The result for Fragment Lighting (2022/12/28)
 
 ![Result 20221228](./images/Result20221228.png)
 
+The result for Fragment Lighting (2022/12/31)
+
+![Result 20221231](./images/Result20221231.png)
+
 ## Pipeline Overview
 
 The simplified Vulkan pipeline:
