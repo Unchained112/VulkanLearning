@@ -25,8 +25,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/LveEngine.dir/src/lve_window.cpp.o.d"
   "CMakeFiles/LveEngine.dir/src/main.cpp.o"
   "CMakeFiles/LveEngine.dir/src/main.cpp.o.d"
-  "CMakeFiles/LveEngine.dir/src/simple_render_system.cpp.o"
-  "CMakeFiles/LveEngine.dir/src/simple_render_system.cpp.o.d"
+  "CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o"
+  "CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o.d"
+  "CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o"
+  "CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o.d"
   "LveEngine"
   "LveEngine.pdb"
 )

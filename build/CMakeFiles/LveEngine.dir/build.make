@@ -251,19 +251,33 @@ CMakeFiles/LveEngine.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LveEngine.dir/src/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cheng/Documents/GitHub/VulkanLearning/src/main.cpp -o CMakeFiles/LveEngine.dir/src/main.cpp.s
 
-CMakeFiles/LveEngine.dir/src/simple_render_system.cpp.o: CMakeFiles/LveEngine.dir/flags.make
-CMakeFiles/LveEngine.dir/src/simple_render_system.cpp.o: ../src/simple_render_system.cpp
-CMakeFiles/LveEngine.dir/src/simple_render_system.cpp.o: CMakeFiles/LveEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/LveEngine.dir/src/simple_render_system.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LveEngine.dir/src/simple_render_system.cpp.o -MF CMakeFiles/LveEngine.dir/src/simple_render_system.cpp.o.d -o CMakeFiles/LveEngine.dir/src/simple_render_system.cpp.o -c /Users/cheng/Documents/GitHub/VulkanLearning/src/simple_render_system.cpp
+CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o: CMakeFiles/LveEngine.dir/flags.make
+CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o: ../src/systems/point_light_system.cpp
+CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o: CMakeFiles/LveEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o -MF CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o.d -o CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o -c /Users/cheng/Documents/GitHub/VulkanLearning/src/systems/point_light_system.cpp
 
-CMakeFiles/LveEngine.dir/src/simple_render_system.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LveEngine.dir/src/simple_render_system.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cheng/Documents/GitHub/VulkanLearning/src/simple_render_system.cpp > CMakeFiles/LveEngine.dir/src/simple_render_system.cpp.i
+CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cheng/Documents/GitHub/VulkanLearning/src/systems/point_light_system.cpp > CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.i
 
-CMakeFiles/LveEngine.dir/src/simple_render_system.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LveEngine.dir/src/simple_render_system.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cheng/Documents/GitHub/VulkanLearning/src/simple_render_system.cpp -o CMakeFiles/LveEngine.dir/src/simple_render_system.cpp.s
+CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cheng/Documents/GitHub/VulkanLearning/src/systems/point_light_system.cpp -o CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.s
+
+CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o: CMakeFiles/LveEngine.dir/flags.make
+CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o: ../src/systems/simple_render_system.cpp
+CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o: CMakeFiles/LveEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o -MF CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o.d -o CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o -c /Users/cheng/Documents/GitHub/VulkanLearning/src/systems/simple_render_system.cpp
+
+CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cheng/Documents/GitHub/VulkanLearning/src/systems/simple_render_system.cpp > CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.i
+
+CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cheng/Documents/GitHub/VulkanLearning/src/systems/simple_render_system.cpp -o CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.s
 
 # Object files for target LveEngine
 LveEngine_OBJECTS = \
@@ -280,7 +294,8 @@ LveEngine_OBJECTS = \
 "CMakeFiles/LveEngine.dir/src/lve_swap_chain.cpp.o" \
 "CMakeFiles/LveEngine.dir/src/lve_window.cpp.o" \
 "CMakeFiles/LveEngine.dir/src/main.cpp.o" \
-"CMakeFiles/LveEngine.dir/src/simple_render_system.cpp.o"
+"CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o" \
+"CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o"
 
 # External object files for target LveEngine
 LveEngine_EXTERNAL_OBJECTS =
@@ -298,10 +313,11 @@ LveEngine: CMakeFiles/LveEngine.dir/src/lve_renderer.cpp.o
 LveEngine: CMakeFiles/LveEngine.dir/src/lve_swap_chain.cpp.o
 LveEngine: CMakeFiles/LveEngine.dir/src/lve_window.cpp.o
 LveEngine: CMakeFiles/LveEngine.dir/src/main.cpp.o
-LveEngine: CMakeFiles/LveEngine.dir/src/simple_render_system.cpp.o
+LveEngine: CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o
+LveEngine: CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o
 LveEngine: CMakeFiles/LveEngine.dir/build.make
 LveEngine: CMakeFiles/LveEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable LveEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable LveEngine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LveEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

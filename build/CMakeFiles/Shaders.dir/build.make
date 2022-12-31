@@ -66,18 +66,30 @@ include CMakeFiles/Shaders.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/Shaders.dir/progress.make
 
+CMakeFiles/Shaders: ../shaders/point_light.frag.spv
+CMakeFiles/Shaders: ../shaders/point_light.vert.spv
 CMakeFiles/Shaders: ../shaders/simple_shader.frag.spv
 CMakeFiles/Shaders: ../shaders/simple_shader.vert.spv
 
+../shaders/point_light.frag.spv: ../shaders/point_light.frag
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../shaders/point_light.frag.spv"
+	/usr/local/bin/glslangValidator -V /Users/cheng/Documents/GitHub/VulkanLearning/shaders/point_light.frag -o /Users/cheng/Documents/GitHub/VulkanLearning/shaders/point_light.frag.spv
+
+../shaders/point_light.vert.spv: ../shaders/point_light.vert
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ../shaders/point_light.vert.spv"
+	/usr/local/bin/glslangValidator -V /Users/cheng/Documents/GitHub/VulkanLearning/shaders/point_light.vert -o /Users/cheng/Documents/GitHub/VulkanLearning/shaders/point_light.vert.spv
+
 ../shaders/simple_shader.frag.spv: ../shaders/simple_shader.frag
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../shaders/simple_shader.frag.spv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating ../shaders/simple_shader.frag.spv"
 	/usr/local/bin/glslangValidator -V /Users/cheng/Documents/GitHub/VulkanLearning/shaders/simple_shader.frag -o /Users/cheng/Documents/GitHub/VulkanLearning/shaders/simple_shader.frag.spv
 
 ../shaders/simple_shader.vert.spv: ../shaders/simple_shader.vert
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ../shaders/simple_shader.vert.spv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating ../shaders/simple_shader.vert.spv"
 	/usr/local/bin/glslangValidator -V /Users/cheng/Documents/GitHub/VulkanLearning/shaders/simple_shader.vert -o /Users/cheng/Documents/GitHub/VulkanLearning/shaders/simple_shader.vert.spv
 
 Shaders: CMakeFiles/Shaders
+Shaders: ../shaders/point_light.frag.spv
+Shaders: ../shaders/point_light.vert.spv
 Shaders: ../shaders/simple_shader.frag.spv
 Shaders: ../shaders/simple_shader.vert.spv
 Shaders: CMakeFiles/Shaders.dir/build.make

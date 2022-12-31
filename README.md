@@ -401,3 +401,9 @@ Point Light Intensity
 Per-Fragment Lighting
 1. Interpolate normals
 2. Do lighting calculation on fragment shader
+
+## Billboards
+
+![Billboards](./images/Billboards.png)
+
+![Render Billboard](./images/RenderBillboard.png)

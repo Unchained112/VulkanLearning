@@ -1,5 +1,5 @@
-CMakeFiles/LveEngine.dir/src/first_app.cpp.o: \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/first_app.cpp \
+CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o: \
+  /Users/cheng/Documents/GitHub/VulkanLearning/src/systems/simple_render_system.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/array \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site \
@@ -509,10 +509,13 @@ CMakeFiles/LveEngine.dir/src/first_app.cpp.o: \
   /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/gtc/../ext/scalar_constants.hpp \
   /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/scalar_constants.inl \
   /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/gtc/constants.inl \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/first_app.hpp \
+  /Users/cheng/Documents/GitHub/VulkanLearning/src/systems/simple_render_system.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bit_reference \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
+  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_camera.hpp \
+  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_pipeline.hpp \
+  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_device.hpp \
   /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_window.hpp \
   /opt/homebrew/Cellar/glfw/3.3.7/include/GLFW/glfw3.h \
   /Users/cheng/VulkanSDK/1.3.204.1/macOS/include/vulkan/vulkan.h \
@@ -533,7 +536,6 @@ CMakeFiles/LveEngine.dir/src/first_app.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/wctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/wctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_wctrans_t.h \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_device.hpp \
   /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_game_object.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/unordered_map \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
@@ -562,12 +564,4 @@ CMakeFiles/LveEngine.dir/src/first_app.cpp.o: \
   /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/gtc/../matrix.hpp \
   /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_model.hpp \
   /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_buffer.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_renderer.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_swap_chain.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_descriptors.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_camera.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/systems/simple_render_system.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_pipeline.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_frame_info.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/systems/point_light_system.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/keyboard_movement_controller.hpp
+  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_frame_info.hpp

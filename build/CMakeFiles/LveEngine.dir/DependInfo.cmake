@@ -21,7 +21,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/cheng/Documents/GitHub/VulkanLearning/src/lve_swap_chain.cpp" "CMakeFiles/LveEngine.dir/src/lve_swap_chain.cpp.o" "gcc" "CMakeFiles/LveEngine.dir/src/lve_swap_chain.cpp.o.d"
   "/Users/cheng/Documents/GitHub/VulkanLearning/src/lve_window.cpp" "CMakeFiles/LveEngine.dir/src/lve_window.cpp.o" "gcc" "CMakeFiles/LveEngine.dir/src/lve_window.cpp.o.d"
   "/Users/cheng/Documents/GitHub/VulkanLearning/src/main.cpp" "CMakeFiles/LveEngine.dir/src/main.cpp.o" "gcc" "CMakeFiles/LveEngine.dir/src/main.cpp.o.d"
-  "/Users/cheng/Documents/GitHub/VulkanLearning/src/simple_render_system.cpp" "CMakeFiles/LveEngine.dir/src/simple_render_system.cpp.o" "gcc" "CMakeFiles/LveEngine.dir/src/simple_render_system.cpp.o.d"
+  "/Users/cheng/Documents/GitHub/VulkanLearning/src/systems/point_light_system.cpp" "CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o" "gcc" "CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o.d"
+  "/Users/cheng/Documents/GitHub/VulkanLearning/src/systems/simple_render_system.cpp" "CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o" "gcc" "CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o.d"
   )
 
 # Targets to which this target links.
