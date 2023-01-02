@@ -21,9 +21,13 @@ The result for Fragment Lighting (2022/12/28)
 
 ![Result 20221228](./images/Result20221228.png)
 
-The result for Fragment Lighting (2022/12/31)
+The result for Billboard point lighting (2022/12/31)
 
 ![Result 20221231](./images/Result20221231.png)
+
+The result for multiple point lights (2023/01/02)
+
+![Result 20230102](./images/Result20230102.png)
 
 ## Pipeline Overview
 

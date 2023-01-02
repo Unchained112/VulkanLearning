@@ -17,18 +17,9 @@
 
 namespace lve
 {
-    struct GlobalUbo {
-        glm::mat4 projection{1.f};
-        glm::mat4 view{1.f};
-        glm::vec4 ambientLightColor{1.f, 1.f, 1.f, .02f}; // w is intensity
-        glm::vec3 lightPosition{-1.f};
-        alignas(16) glm::vec4 lightColor{1.f}; // w is light intensity
-
-    };
-
     FirstApp::FirstApp()
     {
-        globalPool = 
+        globalPool =
             LveDescriptorPool::Builder(lveDevice)
                 .setMaxSets(LveSwapChain::MAX_FRAMES_IN_FLIGHT)
                 .addPoolSize(VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, LveSwapChain::MAX_FRAMES_IN_FLIGHT)
@@ -41,7 +32,8 @@ namespace lve
     void FirstApp::run()
     {
         std::vector<std::unique_ptr<LveBuffer>> uboBuffers(LveSwapChain::MAX_FRAMES_IN_FLIGHT);
-        for(int i = 0; i < uboBuffers.size(); i++){
+        for (int i = 0; i < uboBuffers.size(); i++)
+        {
             uboBuffers[i] = std::make_unique<LveBuffer>(
                 lveDevice,
                 sizeof(GlobalUbo),
@@ -53,11 +45,12 @@ namespace lve
         }
 
         auto globalSetLayout = LveDescriptorSetLayout::Builder(lveDevice)
-            .addBinding(0, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, VK_SHADER_STAGE_ALL_GRAPHICS)
-            .build();
+                                   .addBinding(0, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, VK_SHADER_STAGE_ALL_GRAPHICS)
+                                   .build();
 
         std::vector<VkDescriptorSet> globalDescriptorSets(LveSwapChain::MAX_FRAMES_IN_FLIGHT);
-        for(int i = 0; i < globalDescriptorSets.size(); i++){
+        for (int i = 0; i < globalDescriptorSets.size(); i++)
+        {
             auto bufferInfo = uboBuffers[i]->descriptorInfo();
             LveDescriptorWriter(*globalSetLayout, *globalPool)
                 .writeBuffer(0, &bufferInfo)
@@ -65,13 +58,13 @@ namespace lve
         }
 
         SimpleRenderSystem simpleRenderSystem{
-            lveDevice, 
+            lveDevice,
             lveRenderer.getSwapChainRenderPass(),
             globalSetLayout->getDescriptorSetLayout()};
         PointLightSystem pointLightSystem{
-            lveDevice, 
+            lveDevice,
             lveRenderer.getSwapChainRenderPass(),
-            globalSetLayout->getDescriptorSetLayout()}; 
+            globalSetLayout->getDescriptorSetLayout()};
         LveCamera camera{};
         camera.setViewTarget(glm::vec3(-1.f, -2.f, 2.f), glm::vec3(0.f, 0.f, 2.5f));
 
@@ -93,9 +86,9 @@ namespace lve
             camera.setViewYXZ(viewerObject.transform.translation, viewerObject.transform.rotation);
             float aspect = lveRenderer.getAspectRatio();
             camera.setPerspectiveProjection(glm::radians(50.f), aspect, 0.1f, 100.f);
-            
+
             if (auto commandBuffer = lveRenderer.beginFrame())
-            {    
+            {
                 int frameIndex = lveRenderer.getFrameIndex();
                 FrameInfo frameInfo{
                     frameIndex,
@@ -104,11 +97,12 @@ namespace lve
                     camera,
                     globalDescriptorSets[frameIndex],
                     gameObjects};
-                
+
                 // update
                 GlobalUbo ubo{};
                 ubo.projection = camera.getProjection();
                 ubo.view = camera.getView();
+                pointLightSystem.update(frameInfo, ubo);
                 uboBuffers[frameIndex]->writeToBuffer(&ubo);
                 uboBuffers[frameIndex]->flush();
 
@@ -136,7 +130,7 @@ namespace lve
         flatVase.transform.translation = {-.5f, .5f, 0.f};
         flatVase.transform.scale = {3.f, 1.5f, 3.f};
         gameObjects.emplace(flatVase.getID(), std::move(flatVase));
-        
+
         lveModel = LveModel::createModelFromFile(lveDevice, "models/smooth_vase.obj");
         auto smoothVase = LveGameObject::createGameObject();
         smoothVase.model = lveModel;
@@ -150,6 +144,28 @@ namespace lve
         floor.transform.translation = {0.f, .5f, 0.f};
         floor.transform.scale = {3.f, 1.f, 3.f};
         gameObjects.emplace(floor.getID(), std::move(floor));
+
+        std::vector<glm::vec3> lightColors{
+            {1.f, .1f, .1f},
+            {.1f, .1f, 1.f},
+            {.1f, 1.f, .1f},
+            {1.f, 1.f, .1f},
+            {.1f, 1.f, 1.f},
+            {1.f, 1.f, 1.f} //
+        };
+        
+        for(int i = 0; i < lightColors.size(); i++)
+        {
+            auto pointLight = LveGameObject::makePointLight(0.2f);
+            pointLight.color = lightColors[i];
+            auto rotateLight = glm::rotate(
+                glm::mat4(1.f),
+                (i * glm::two_pi<float>() / lightColors.size()),
+                {0.f, -1.f, 0.f});
+            pointLight.transform.translation = glm::vec3(rotateLight * glm::vec4(-1.f, -1.f, -1.f, 1.f));
+            gameObjects.emplace(pointLight.getID(), std::move(pointLight));
+        }
+
     }
 
 } // namespace lve
