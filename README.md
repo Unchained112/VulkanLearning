@@ -415,3 +415,21 @@ Per-Fragment Lighting
 ![Billboards](./images/Billboards.png)
 
 ![Render Billboard](./images/RenderBillboard.png)
+
+## Specular Lighting
+
+![Specular Lighting](./images/SpecularLighting.png)
+
+Phong Model
+
+![Phong Model](./images/PhongModel.png)
+
+Phong Model Limitations
+
+![Phong Model Limitations](./images/PhongModelLimitations.png)
+
+Bling-Phong Model
+
+![Bling Phong Model](./images/BlingPhongModel.png)
+
+![Bling Phong Color](./images/BlingPhongColor.png)
