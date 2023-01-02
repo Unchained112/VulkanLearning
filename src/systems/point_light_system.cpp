@@ -1,5 +1,6 @@
 #include <array>
 #include <cassert>
+#include <map>
 #include <stdexcept>
 
 #define GLM_FORCE_RADIANS
@@ -55,6 +56,7 @@ namespace lve
 
         PipelineConfigInfo pipelineConfig{};
         LvePipeline::defaultPipelineConfigInfo(pipelineConfig);
+        LvePipeline::enableAlphaBlending(pipelineConfig);
         pipelineConfig.attributeDescriptions.clear();
         pipelineConfig.bindingDescriptions.clear();
         pipelineConfig.renderPass = renderPass;
@@ -68,7 +70,8 @@ namespace lve
 
     void PointLightSystem::update(FrameInfo &frameInfo, GlobalUbo &ubo)
     {
-        auto rotateLight = glm::rotate(glm::mat4(1.f), frameInfo.frameTime * 0.5f, {0.f, -1.f, 0.f}); // rotate point lights
+        //auto rotateLight = glm::rotate(glm::mat4(1.f), frameInfo.frameTime * 0.5f, {0.f, -1.f, 0.f}); // rotate point lights
+        auto rotateLight = glm::mat4{1.f};
         int lightIndex = 0;
         for(auto &kv : frameInfo.gameObjects)
         {
@@ -91,6 +94,19 @@ namespace lve
 
     void PointLightSystem::render(FrameInfo &frameInfo)
     {
+        // sort lights
+        std::map<float, LveGameObject::id_t> sorted;
+        for(auto &kv : frameInfo.gameObjects)
+        {
+            auto &obj = kv.second;
+            if(obj.pointLight == nullptr) continue;
+
+            // calculate distance
+            auto offset = frameInfo.camera.getPosition() - obj.transform.translation;
+            float disSquared = glm::dot(offset, offset);
+            sorted[disSquared] = obj.getID();
+        }
+        
         lvePipeline->bind(frameInfo.commandBuffer);
 
         vkCmdBindDescriptorSets(
@@ -103,10 +119,12 @@ namespace lve
             0,
             nullptr);
 
-        for(auto &kv : frameInfo.gameObjects)
+        // iterate through sorted lights in reverse order
+        for(auto it = sorted.rbegin(); it != sorted.rend(); it++)
         {
-            auto &obj = kv.second;
-            if(obj.pointLight == nullptr) continue;
+            // use game obj id to find light objects
+            auto &obj = frameInfo.gameObjects.at(it->second);
+
             PointLightPushConstants push{};
             push.position = glm::vec4(obj.transform.translation, 1.f);
             push.color = glm::vec4(obj.color, obj.pointLight->lightIntensity);

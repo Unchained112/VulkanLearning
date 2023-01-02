@@ -25,9 +25,14 @@ The result for Billboard point lighting (2022/12/31)
 
 ![Result 20221231](./images/Result20221231.png)
 
-The result for multiple point lights (2023/01/02)
+The result for multiple point lights (2023/01/01)
+
+![Result 20230101](./images/Result20230101.png)
+
+The result for specular light and transparency point light (2023/01/02)
 
 ![Result 20230102](./images/Result20230102.png)
+
 
 ## Pipeline Overview
 

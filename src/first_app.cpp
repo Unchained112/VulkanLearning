@@ -113,8 +113,10 @@ namespace lve
                 // end offscreen shadow pass
                 // reflection, post-processing, etc.
                 lveRenderer.beginSwapChainRenderPass(commandBuffer);
+                // order here matters for transparent objects
                 simpleRenderSystem.renderGameObjects(frameInfo);
                 pointLightSystem.render(frameInfo);
+                
                 lveRenderer.endSwapChainRenderPass(commandBuffer);
                 lveRenderer.endFrame();
             }
