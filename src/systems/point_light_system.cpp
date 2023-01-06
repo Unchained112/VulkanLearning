@@ -70,8 +70,7 @@ namespace lve
 
     void PointLightSystem::update(FrameInfo &frameInfo, GlobalUbo &ubo)
     {
-        //auto rotateLight = glm::rotate(glm::mat4(1.f), frameInfo.frameTime * 0.5f, {0.f, -1.f, 0.f}); // rotate point lights
-        auto rotateLight = glm::mat4{1.f};
+        auto rotateLight = glm::rotate(glm::mat4(1.f), frameInfo.frameTime * 0.5f, {0.f, -1.f, 0.f}); // rotate point lights
         int lightIndex = 0;
         for(auto &kv : frameInfo.gameObjects)
         {

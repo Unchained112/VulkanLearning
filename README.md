@@ -33,6 +33,9 @@ The result for specular light and transparency point light (2023/01/02)
 
 ![Result 20230102](./images/Result20230102.png)
 
+The result for texture (2023/01/06)
+
+![Result 20230106](./images/Result20230106.png)
 
 ## Pipeline Overview
 
@@ -438,3 +441,21 @@ Bling-Phong Model
 ![Bling Phong Model](./images/BlingPhongModel.png)
 
 ![Bling Phong Color](./images/BlingPhongColor.png)
+
+## Textures
+
+1. Load texture on CPU
+2. Create staging buffer and copy the texture data to it
+3. Create image object on the GPU
+4. Transition image layout for upload
+5. Copy staging buffer layout for shaders
+6. Transition image layout for shaders
+7. Add the image/texture to descriptor set
+
+**MipMapping** (also MIP maps) or pyramids are pre-calculated, optimized sequences of images, each of which is a progressively lower resolution representation of the previous. 
+
+Mipmaps are used for:
+- Level of detail (LOD)
+- Improving image quality. Rendering from large textures where only small, discontiguous subsets of texels are used can easily produce Moiré patterns;
+- Speeding up rendering times, either by reducing the number of texels sampled to render each pixel, or increasing the memory locality of the samples taken;
+- Reducing stress on the GPU or CPU.

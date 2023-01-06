@@ -223,10 +223,24 @@ CMakeFiles/LveEngine.dir/src/lve_swap_chain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LveEngine.dir/src/lve_swap_chain.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_swap_chain.cpp -o CMakeFiles/LveEngine.dir/src/lve_swap_chain.cpp.s
 
+CMakeFiles/LveEngine.dir/src/lve_texture.cpp.o: CMakeFiles/LveEngine.dir/flags.make
+CMakeFiles/LveEngine.dir/src/lve_texture.cpp.o: ../src/lve_texture.cpp
+CMakeFiles/LveEngine.dir/src/lve_texture.cpp.o: CMakeFiles/LveEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/LveEngine.dir/src/lve_texture.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LveEngine.dir/src/lve_texture.cpp.o -MF CMakeFiles/LveEngine.dir/src/lve_texture.cpp.o.d -o CMakeFiles/LveEngine.dir/src/lve_texture.cpp.o -c /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_texture.cpp
+
+CMakeFiles/LveEngine.dir/src/lve_texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LveEngine.dir/src/lve_texture.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_texture.cpp > CMakeFiles/LveEngine.dir/src/lve_texture.cpp.i
+
+CMakeFiles/LveEngine.dir/src/lve_texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LveEngine.dir/src/lve_texture.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_texture.cpp -o CMakeFiles/LveEngine.dir/src/lve_texture.cpp.s
+
 CMakeFiles/LveEngine.dir/src/lve_window.cpp.o: CMakeFiles/LveEngine.dir/flags.make
 CMakeFiles/LveEngine.dir/src/lve_window.cpp.o: ../src/lve_window.cpp
 CMakeFiles/LveEngine.dir/src/lve_window.cpp.o: CMakeFiles/LveEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/LveEngine.dir/src/lve_window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/LveEngine.dir/src/lve_window.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LveEngine.dir/src/lve_window.cpp.o -MF CMakeFiles/LveEngine.dir/src/lve_window.cpp.o.d -o CMakeFiles/LveEngine.dir/src/lve_window.cpp.o -c /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_window.cpp
 
 CMakeFiles/LveEngine.dir/src/lve_window.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/LveEngine.dir/src/lve_window.cpp.s: cmake_force
 CMakeFiles/LveEngine.dir/src/main.cpp.o: CMakeFiles/LveEngine.dir/flags.make
 CMakeFiles/LveEngine.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/LveEngine.dir/src/main.cpp.o: CMakeFiles/LveEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/LveEngine.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/LveEngine.dir/src/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LveEngine.dir/src/main.cpp.o -MF CMakeFiles/LveEngine.dir/src/main.cpp.o.d -o CMakeFiles/LveEngine.dir/src/main.cpp.o -c /Users/cheng/Documents/GitHub/VulkanLearning/src/main.cpp
 
 CMakeFiles/LveEngine.dir/src/main.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/LveEngine.dir/src/main.cpp.s: cmake_force
 CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o: CMakeFiles/LveEngine.dir/flags.make
 CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o: ../src/systems/point_light_system.cpp
 CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o: CMakeFiles/LveEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o -MF CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o.d -o CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o -c /Users/cheng/Documents/GitHub/VulkanLearning/src/systems/point_light_system.cpp
 
 CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.s: cmake_force
 CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o: CMakeFiles/LveEngine.dir/flags.make
 CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o: ../src/systems/simple_render_system.cpp
 CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o: CMakeFiles/LveEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o -MF CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o.d -o CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o -c /Users/cheng/Documents/GitHub/VulkanLearning/src/systems/simple_render_system.cpp
 
 CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.i: cmake_force
@@ -292,6 +306,7 @@ LveEngine_OBJECTS = \
 "CMakeFiles/LveEngine.dir/src/lve_pipeline.cpp.o" \
 "CMakeFiles/LveEngine.dir/src/lve_renderer.cpp.o" \
 "CMakeFiles/LveEngine.dir/src/lve_swap_chain.cpp.o" \
+"CMakeFiles/LveEngine.dir/src/lve_texture.cpp.o" \
 "CMakeFiles/LveEngine.dir/src/lve_window.cpp.o" \
 "CMakeFiles/LveEngine.dir/src/main.cpp.o" \
 "CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o" \
@@ -311,13 +326,14 @@ LveEngine: CMakeFiles/LveEngine.dir/src/lve_model.cpp.o
 LveEngine: CMakeFiles/LveEngine.dir/src/lve_pipeline.cpp.o
 LveEngine: CMakeFiles/LveEngine.dir/src/lve_renderer.cpp.o
 LveEngine: CMakeFiles/LveEngine.dir/src/lve_swap_chain.cpp.o
+LveEngine: CMakeFiles/LveEngine.dir/src/lve_texture.cpp.o
 LveEngine: CMakeFiles/LveEngine.dir/src/lve_window.cpp.o
 LveEngine: CMakeFiles/LveEngine.dir/src/main.cpp.o
 LveEngine: CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o
 LveEngine: CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o
 LveEngine: CMakeFiles/LveEngine.dir/build.make
 LveEngine: CMakeFiles/LveEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable LveEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/cheng/Documents/GitHub/VulkanLearning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable LveEngine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LveEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

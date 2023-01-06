@@ -406,6 +406,30 @@ src/lve_swap_chain.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_swap_chain.cpp.s
 .PHONY : src/lve_swap_chain.cpp.s
 
+src/lve_texture.o: src/lve_texture.cpp.o
+.PHONY : src/lve_texture.o
+
+# target to build an object file
+src/lve_texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_texture.cpp.o
+.PHONY : src/lve_texture.cpp.o
+
+src/lve_texture.i: src/lve_texture.cpp.i
+.PHONY : src/lve_texture.i
+
+# target to preprocess a source file
+src/lve_texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_texture.cpp.i
+.PHONY : src/lve_texture.cpp.i
+
+src/lve_texture.s: src/lve_texture.cpp.s
+.PHONY : src/lve_texture.s
+
+# target to generate assembly for a file
+src/lve_texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_texture.cpp.s
+.PHONY : src/lve_texture.cpp.s
+
 src/lve_window.o: src/lve_window.cpp.o
 .PHONY : src/lve_window.o
 
@@ -545,6 +569,9 @@ help:
 	@echo "... src/lve_swap_chain.o"
 	@echo "... src/lve_swap_chain.i"
 	@echo "... src/lve_swap_chain.s"
+	@echo "... src/lve_texture.o"
+	@echo "... src/lve_texture.i"
+	@echo "... src/lve_texture.s"
 	@echo "... src/lve_window.o"
 	@echo "... src/lve_window.i"
 	@echo "... src/lve_window.s"

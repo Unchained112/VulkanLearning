@@ -1,19 +1,27 @@
-CMakeFiles/LveEngine.dir/src/first_app.cpp.o: \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/first_app.cpp \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/array \
+CMakeFiles/LveEngine.dir/src/lve_texture.cpp.o: \
+  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_texture.cpp \
+  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_texture.hpp \
+  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_device.hpp \
+  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_window.hpp \
+  /opt/homebrew/Cellar/glfw/3.3.7/include/GLFW/glfw3.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/pthread.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__debug \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iosfwd \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__mbstate_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/wchar.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/__stddef_max_align_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__nullptr \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/wchar.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int8_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int16_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int32_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int64_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint8_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint16_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint32_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint64_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/cdefs.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_symbol_aliasing.h \
@@ -21,24 +29,36 @@ CMakeFiles/LveEngine.dir/src/first_app.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/machine/_types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/arm/_types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_types.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/Availability.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityVersions.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityInternal.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_null.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_size_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_mbstate_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_intptr_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/machine/types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/arm/types.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int8_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int16_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int32_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int64_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_u_int8_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_u_int16_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_u_int32_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_u_int64_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_intptr_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_uintptr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_intmax_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_uintmax_t.h \
+  /Users/cheng/VulkanSDK/1.3.204.1/macOS/include/vulkan/vulkan.h \
+  /Users/cheng/VulkanSDK/1.3.204.1/macOS/include/vulkan/vk_platform.h \
+  /Users/cheng/VulkanSDK/1.3.204.1/macOS/include/vulkan/vulkan_core.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gltypes.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/os/availability.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityInternal.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__debug \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iosfwd \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__mbstate_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/wchar.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/wchar.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/Availability.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityVersions.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_null.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_size_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_mbstate_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_ct_rune_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_rune_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_wchar_t.h \
@@ -63,32 +83,17 @@ CMakeFiles/LveEngine.dir/src/first_app.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/ctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_ctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/runetype.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tuple \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstddef \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/version \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/type_traits \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/forward.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/move.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__undef_macros \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/algorithm \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bits \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstring \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/string.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_rsize_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_errno_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/strings.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/functional \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/search.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/comp.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/iterator_traits.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/concepts \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional_base \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/binary_function.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/invoke.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/weak_result_type.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/binary_function.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/unary_function.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional_base \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__undef_macros \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/type_traits \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstddef \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/version \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/forward.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/move.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/operations.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/reference_wrapper.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/addressof.h \
@@ -116,15 +121,6 @@ CMakeFiles/LveEngine.dir/src/first_app.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_sigset_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_uid_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/resource.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdint.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stdint.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/stdint.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint8_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint16_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint32_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint64_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_intmax_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_uintmax_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_timeval.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/machine/endian.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/arm/endian.h \
@@ -140,6 +136,7 @@ CMakeFiles/LveEngine.dir/src/first_app.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/typeinfo \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstdint \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/utility \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tuple \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/as_const.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/cmp.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/limits \
@@ -155,7 +152,23 @@ CMakeFiles/LveEngine.dir/src/first_app.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/to_underlying.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/compare \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/initializer_list \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/wrap_iter.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/iterator_traits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/concepts \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/readable_traits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/pointer_traits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/algorithm \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bits \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstring \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/string.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_rsize_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_errno_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/strings.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/functional \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/search.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/comp.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/binary_negate.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/bind_front.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/perfect_forward.h \
@@ -167,7 +180,6 @@ CMakeFiles/LveEngine.dir/src/first_app.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/function.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/allocator_traits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/construct_at.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/pointer_traits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/compressed_pair.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/shared_ptr.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/allocation_guard.h \
@@ -244,7 +256,6 @@ CMakeFiles/LveEngine.dir/src/first_app.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/reverse_access.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/reverse_iterator.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/size.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/wrap_iter.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/temporary_buffer.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/uninitialized_algorithms.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cassert \
@@ -349,180 +360,6 @@ CMakeFiles/LveEngine.dir/src/first_app.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/transform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique_copy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique.h \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/glm.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/_fixes.hpp \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cmath \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/math.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/math.h \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/setup.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/../simd/platform.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cfloat \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/float.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/float.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/float.h \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/fwd.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/qualifier.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/vec2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_bool2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../detail/type_vec2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/type_vec2.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/./compute_vector_relational.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_bool2_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_float2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_float2_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_double2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_double2_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_int2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_int2_sized.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../ext/vector_int2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../ext/scalar_int_sized.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../detail/setup.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_uint2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_uint2_sized.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../ext/vector_uint2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../ext/scalar_uint_sized.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/vec3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_bool3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../detail/type_vec3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/type_vec3.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/compute_vector_relational.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_bool3_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_float3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_float3_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_double3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_double3_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_int3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_int3_sized.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../ext/vector_int3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_uint3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_uint3_sized.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../ext/vector_uint3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/vec4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_bool4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../detail/type_vec4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/type_vec4.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_bool4_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_float4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_float4_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_double4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_double4_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_int4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_int4_sized.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../ext/vector_int4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_uint4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/vector_uint4_sized.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../ext/vector_uint4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/mat2x2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_double2x2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../detail/type_mat2x2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/type_vec2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/type_mat2x2.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/../matrix.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/mat2x3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_double2x3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../detail/type_mat2x3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/type_vec3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/type_mat2x3.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_double2x3_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_float2x3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_float2x3_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/mat2x4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_double2x4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../detail/type_mat2x4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/type_vec4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/type_mat2x4.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_double2x4_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_float2x4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_float2x4_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/mat3x2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_double3x2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../detail/type_mat3x2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/type_mat3x2.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_double3x2_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_float3x2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_float3x2_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/mat3x3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_double3x3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../detail/type_mat3x3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/type_mat3x3.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_double3x3_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_float3x3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_float3x3_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/mat3x4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_double3x4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../detail/type_mat3x4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/type_mat3x4.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_double3x4_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_float3x4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_float3x4_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/mat4x2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_double4x2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../detail/type_mat4x2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/type_mat4x2.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_double4x2_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_float4x2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_float4x2_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/mat4x3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_double4x3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../detail/type_mat4x3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/type_mat4x3.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_double4x3_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_float4x3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_float4x3_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/mat4x4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_double4x4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../detail/type_mat4x4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/type_mat4x4.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_double4x4_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_float4x4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_float4x4_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/func_matrix.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/../geometric.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/func_geometric.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/../exponential.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/type_vec1.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/type_vec1.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/func_exponential.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/../vector_relational.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/func_vector_relational.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/_vectorize.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/../common.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/func_common.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/compute_common.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_double2x2_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_float2x2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_float2x2_precision.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/trigonometric.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/func_trigonometric.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/exponential.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/common.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/packing.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/func_packing.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/type_half.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/type_half.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/geometric.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/matrix.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/vector_relational.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/integer.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/detail/func_integer.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/gtc/constants.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/gtc/../ext/scalar_constants.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/scalar_constants.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/gtc/constants.inl \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/first_app.hpp \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bit_reference \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_window.hpp \
-  /opt/homebrew/Cellar/glfw/3.3.7/include/GLFW/glfw3.h \
-  /Users/cheng/VulkanSDK/1.3.204.1/macOS/include/vulkan/vulkan.h \
-  /Users/cheng/VulkanSDK/1.3.204.1/macOS/include/vulkan/vk_platform.h \
-  /Users/cheng/VulkanSDK/1.3.204.1/macOS/include/vulkan/vulkan_core.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gltypes.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/os/availability.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstdio \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string_view \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__ranges/enable_view.h \
@@ -533,42 +370,11 @@ CMakeFiles/LveEngine.dir/src/first_app.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/wctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/wctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_wctrans_t.h \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_device.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_game_object.hpp \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/unordered_map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__hash_table \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/optional \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/gtc/matrix_transform.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/gtc/../mat4x4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/gtc/../vec2.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/gtc/../vec3.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/gtc/../vec4.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/gtc/../ext/matrix_projection.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../gtc/constants.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../geometric.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../trigonometric.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../matrix.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_projection.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/gtc/../ext/matrix_clip_space.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/../ext/scalar_constants.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_clip_space.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/gtc/../ext/matrix_transform.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/./ext/matrix_transform.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/gtc/matrix_transform.inl \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/gtc/../geometric.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/gtc/../trigonometric.hpp \
-  /opt/homebrew/Cellar/glm/0.9.9.8/include/glm/gtc/../matrix.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_model.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bit_reference \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
+  /Users/cheng/Documents/GitHub/VulkanLearning/src/../external/stb/stb_image.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/math.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/math.h \
   /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_buffer.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_renderer.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_swap_chain.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_descriptors.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_camera.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_texture.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/systems/simple_render_system.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_pipeline.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/lve_frame_info.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/systems/point_light_system.hpp \
-  /Users/cheng/Documents/GitHub/VulkanLearning/src/keyboard_movement_controller.hpp
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cmath

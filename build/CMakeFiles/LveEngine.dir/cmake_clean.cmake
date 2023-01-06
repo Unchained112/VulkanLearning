@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/LveEngine.dir/src/lve_renderer.cpp.o.d"
   "CMakeFiles/LveEngine.dir/src/lve_swap_chain.cpp.o"
   "CMakeFiles/LveEngine.dir/src/lve_swap_chain.cpp.o.d"
+  "CMakeFiles/LveEngine.dir/src/lve_texture.cpp.o"
+  "CMakeFiles/LveEngine.dir/src/lve_texture.cpp.o.d"
   "CMakeFiles/LveEngine.dir/src/lve_window.cpp.o"
   "CMakeFiles/LveEngine.dir/src/lve_window.cpp.o.d"
   "CMakeFiles/LveEngine.dir/src/main.cpp.o"
